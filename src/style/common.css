@@ -1,0 +1,50 @@
+body,ul,h1,h2,h3,h4,h5,h6,input,button,p,dl,dd {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 12px microsoft yahei;
+	color: #666;
+	background-color: #eee;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+a:hover {
+	color: rgb(241,2,21);
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+}
+input {
+	border: 0 none;
+	outline-style: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix:before,.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+.w {
+	width: 100%;
+	height: 100%;
+}
