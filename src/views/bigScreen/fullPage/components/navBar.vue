@@ -9,8 +9,8 @@
 			</div>
 			<div class="nav-middle fl">
         <p>指挥中心</p>
-        <el-menu :default-active="activeIndex" class="el-menu-demo nav-btn-chx" mode="horizontal" @select="handleSelect" background-color="rgba(0,0,0,0)" text-color="#fff" active-text-color="rgb(33,156,252)">
-          <el-menu-item index="1">风险态势</el-menu-item>
+        <el-menu default-active="hazard" class="el-menu-demo nav-btn-chx" mode="horizontal" @select="handleSelect" background-color="rgba(0,0,0,0)" text-color="#fff" active-text-color="rgb(33,156,252)" router>
+          <el-menu-item index="hazard"  >风险态势</el-menu-item>
           <el-menu-item index="2">威胁态势</el-menu-item>
           <el-menu-item index="3">指挥调度</el-menu-item>
           <el-menu-item index="4">态势分析</el-menu-item>
@@ -21,7 +21,6 @@
    
 		
 	</div>
-  </div>
 </template>
 
 <script>

@@ -1,6 +1,15 @@
 <template>
   <div class="container">
-    <nav-bar></nav-bar>
+    <header>
+      <nav-bar></nav-bar>
+    </header>
+    <main>
+      <router-view></router-view>
+    </main>
+    
+    
+ 
+
     
    
   </div>
@@ -42,11 +51,21 @@ export default {
 
 <style scoped>
 .container {
-  margin: 0 auto;
   width: 100%;
   height: 43.2rem;
   position: relative;
   background: url(./img/dbj.jpg) no-repeat;
   background-size: 100% 100%;
+  
+  padding:0.4rem;
+  box-sizing: border-box;
+}
+header{
+  width: 100%;
+  height: 3.4rem;
+}
+main{
+  width: 100%;
+  height: 39rem;
 }
 </style>

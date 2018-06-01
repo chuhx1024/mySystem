@@ -44,7 +44,7 @@ export default {
   },
   methods:{
       submitForm:function (){
-          this.$router.push('BigScreen')
+          this.$router.push('bigScreen/hazard')
       }
   }
 };
