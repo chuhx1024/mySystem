@@ -39,7 +39,6 @@ export default {
 				var clientHeight = docEl.clientHeight;
 				if (!clientHeight) return;
 					docEl.style.fontSize = 25 * (clientHeight / 1080) + 'px';
-					console.log(document.body.offsetHeight);
 			};
 		if (!doc.addEventListener) return;
 		win.addEventListener(resizeEvt, recalc, false);

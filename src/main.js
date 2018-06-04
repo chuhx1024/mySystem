@@ -11,12 +11,14 @@ import './style/common.css'// A modern alternative to CSS resets
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
+
 //引入element-ui end
 
 //引入echarts start
 import echarts from 'echarts';
 Vue.prototype.$echarts = echarts ;
 //引入echarts end
+Vue.use(require('vue-moment')); 
 
 
 
