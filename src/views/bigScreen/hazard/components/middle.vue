@@ -81,11 +81,10 @@ export default {
     this.drawMap();
   },
   methods: {
-      //走马灯指示标跟随
-      getNum:function(index){
-        
-        this.radio2=index;
-      },
+    //走马灯指示标跟随
+    getNum: function(index) {
+      this.radio2 = index;
+    },
     //底部表格隔行变色
     tableRowClassName({ row, rowIndex }) {
       if (rowIndex === 1) {

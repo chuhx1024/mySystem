@@ -1,27 +1,25 @@
 <template>
-  <div class="container"  >
-    <div class="cell">
-      <h2>
-        <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
-      </h2>
-      <div id="main1"></div>
+  <div class="container">
+    <div class="top">
+
     </div>
-    <div class="cell">
-      <h2>
-        <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
-      </h2>
-      <div id="main2"></div>
+    <div class="bottom">
+      <div class="cell">
+        <h2>
+          <span class="el-icon-arrow-right"></span>
+          <span>受威胁严重行业TOP5</span>
+        </h2>
+        <div id="main1"></div>
+      </div>
+      <div class="cell">
+        <h2>
+          <span class="el-icon-arrow-right"></span>
+          <span>受威胁严重区域TOP10</span>
+        </h2>
+        <div id="main2"></div>
+      </div>
     </div>
-    <div class="cell">
-      <h2>
-        <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
-      </h2>
-      <div id="main3"></div>
-    </div>
-    <div class="cell"></div>
+
   </div>
 </template>
 
@@ -272,30 +270,36 @@ export default {
 .container {
   width: 100%;
   height: 39rem;
-
-  .cell {
-    width: 100%;
-    height: 9.35rem;
-    background-color: rgba(28, 56, 116, 0.25);
-    border: 1px solid #033993;
-    border-top: none;
-    border-radius: 0 21px 0 0;
-    background-image: url(../img/z_t01.png), url(../img/z_t02.png);
-    background-position: left top, right top;
-    background-repeat: no-repeat, no-repeat;
-    margin-bottom: 0.4rem;
-    h2 {
-      height: 17%;
-      width: 100%;
-      color: #00d8fe;
-      span {
-        font-weight: 900;
-        font-size: 0.64rem;
+  .top{
+    width: 100px;
+    height: 29rem;
+  }
+  .bottom {
+    .cell {
+      width: 48%;
+      float: left;
+      height: 9.8rem;
+      background-color: rgba(28, 56, 116, 0.25);
+      border: 1px solid #033993;
+      border-top: none;
+      border-radius: 0 21px 0 0;
+      background-image: url(../img/z_t01.png), url(../img/z_t02.png);
+      background-position: left top, right top;
+      background-repeat: no-repeat, no-repeat;
+      margin: 0 0.4rem 0.4rem 0;
+      h2 {
+        height: 17%;
+        width: 100%;
+        color: #00d8fe;
+        span {
+          font-weight: 900;
+          font-size: 0.64rem;
+        }
       }
-    }
-    div {
-      height: 83%;
-      width: 100%;
+      div {
+        height: 83%;
+        width: 100%;
+      }
     }
   }
 }
