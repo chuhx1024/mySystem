@@ -39,4 +39,10 @@ html,body{
     background-color:rgba(0,0,0,0.2);
   }
 }
+//风险态势 复选框的样式 start
+.ts-checkbox{
+  float: right;
+  margin-right: 2%;
+}
+//风险态势 复选框的样式 end
 </style>

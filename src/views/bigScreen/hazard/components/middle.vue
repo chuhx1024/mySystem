@@ -1,49 +1,47 @@
 <template>
-  <div class="container"  >
+  <div class="container">
     <div style="width:100%;height:26.76rem;">
-        <div id="chinaMap"></div>
+      <div id="chinaMap"></div>
     </div>
     <div style="" class="bottom">
-        <h2>
-            <span class="el-icon-arrow-right"></span>
-            <span >实时风险预警</span>
-            <template>
-                <el-radio-group v-model="radio2">
-                    <el-radio :label="0">高危</el-radio>
-                    <el-radio :label="1">中危</el-radio>
-                    <el-radio :label="2">低危</el-radio>
-                </el-radio-group>
-            </template>
-        </h2>
-        <template>
-            <el-carousel indicator-position="none" height="10.14rem" :interval="3000" @change="getNum">
-                <el-carousel-item v-for="item in 3" :key="item" >
-                <template>
-                    <el-table
-                        :data="tableData2"
-                        style="width: 100%"
-                        :row-class-name="tableRowClassName">
-                        <el-table-column
-                        prop="date"
-                        label="日期"
-                        width="180">
-                        </el-table-column>
-                        <el-table-column
-                        prop="name"
-                        label="姓名"
-                        width="180">
-                        </el-table-column>
-                        <el-table-column
-                        prop="address"
-                        label="地址">
-                        </el-table-column>
-                    </el-table>
-                    </template>
-                </el-carousel-item>
-            </el-carousel>
-        </template>
+      <h2>
+        <span class="el-icon-arrow-right"></span>
+        <span>实时风险预警</span>
+        <div class="ts-checkbox">
+          <el-checkbox-group v-model="checkList">
+            <el-checkbox label="高危"></el-checkbox>
+            <el-checkbox label="中危"></el-checkbox>
+            <el-checkbox label="低危"></el-checkbox>
+          </el-checkbox-group>
+        </div>
+      </h2>
+      <div class="ts-head">
+        <span>发生时间</span>
+        <span>风险名称</span>
+        <span>风险级别</span>
+        <span>单位名称</span>
+        <span>网站名称</span>
+        <span>属地</span>
+        <span>IP地址</span>
+        <span>责任人</span>
+      </div>
+      <div class="scroll-wrap">
+        <ul class="scroll-content" :style="{ top }" ref="con1">
+          <li v-for="item in items" >
+            <span>{{item.time}}</span>
+            <span>{{item.name}}</span>
+            <div class="ts-level"><span :class="{bgh:item.level=='高危',bgm:item.level=='中危',bgl:item.level=='低危',}">{{item.level}}</span></div>
+            <span>{{item.unit}}</span>
+            <span>{{item.website}}</span>
+            <span>{{item.possession}}</span>
+            <span>{{item.IP}}</span>
+            <span>{{item.person}}</span>
+          </li>
+        </ul>
+      </div>
+
     </div>
- </div>
+  </div>
 </template>
 
 <script>
@@ -51,54 +49,127 @@ export default {
   name: "Middle",
   data() {
     return {
-      radio2: 1,
-      msg: "Welcome to Your Vue.js App",
-      tableData2: [
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        },
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          address: "上海市普陀区金沙江路 1518 弄"
-        }
-      ]
+      checkList: ['高危','中危','低危'],
+      
+      prizeList: [
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马入侵", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "蠕虫侵入", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "XSS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+      ],
+      
+
+      activeIndex: 0
     };
   },
+  
   mounted() {
     this.drawMap();
+    
+    let con1 = this.$refs.con1;
+
+    setInterval(_ => {
+      if (this.activeIndex < this.items.length-6) {
+        con1.style.transition = " top 1s";
+        this.activeIndex += 1;
+      } else {
+        this.activeIndex = 0;
+        con1.style.transition = "none";
+        con1.style.top = "0px";
+      }
+    }, 2000);
+  },
+  computed: {
+    top() {
+      return -this.activeIndex * 1.124 + "rem";
+    },
+    items: function() {
+      return this.prizeList.filter((item)=>{
+        return !(this.checkList.indexOf(item.level)==-1) ;
+      });
+    }
   },
   methods: {
-    //走马灯指示标跟随
-    getNum: function(index) {
-      this.radio2 = index;
-    },
-    //底部表格隔行变色
-    tableRowClassName({ row, rowIndex }) {
-      if (rowIndex === 1) {
-        return "warning-row";
-      } else if (rowIndex === 3) {
-        return "success-row";
-      }
-      return "";
-    },
+   
     //绘制地图
     drawMap() {
       // 基于准备好的dom，初始化echarts实例
       let myChart = this.$echarts.init(document.getElementById("chinaMap"));
       require("echarts/map/js/china");
+      require("echarts/map/js/province/anhui");
+      require("echarts/map/js/province/aomen");
+      require("echarts/map/js/province/beijing");
+      require("echarts/map/js/province/chongqing");
+      require("echarts/map/js/province/fujian");
+      require("echarts/map/js/province/gansu");
+      require("echarts/map/js/province/guangdong");
+      require("echarts/map/js/province/guangxi");
+      require("echarts/map/js/province/guizhou");
+      require("echarts/map/js/province/hainan");
+      require("echarts/map/js/province/hebei");
+      require("echarts/map/js/province/heilongjiang");
+      require("echarts/map/js/province/henan");
+      require("echarts/map/js/province/hunan");
+      require("echarts/map/js/province/jiangsu");
+      require("echarts/map/js/province/jiangxi");
+      require("echarts/map/js/province/jilin");
+      require("echarts/map/js/province/liaoning");
+      require("echarts/map/js/province/neimenggu");
+      require("echarts/map/js/province/ningxia");
+      require("echarts/map/js/province/qinghai");
+      require("echarts/map/js/province/shandong");
+      require("echarts/map/js/province/shanghai");
+      require("echarts/map/js/province/shanxi");
+      require("echarts/map/js/province/shanxi1");
+      require("echarts/map/js/province/sichuan");
+      require("echarts/map/js/province/taiwan");
+      require("echarts/map/js/province/tianjin");
+      require("echarts/map/js/province/xianggang");
+      require("echarts/map/js/province/xinjiang");
+      require("echarts/map/js/province/xizang");
+      require("echarts/map/js/province/yunnan");
+      require("echarts/map/js/province/zhejiang");
+
+      // 内蒙古城市的地图js
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_a1_la1_shan4_meng2.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_ba1_yan4_nao4_er3.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_bao1_tou2.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_chi4_feng1.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_e4_er3_duo1_si1.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_hu1_he2_hao4_te4.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_hu1_lun2_bei4_er3.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_tong1_liao2.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_wu1_hai3.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_wu1_lan2_cha2_bu4.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_xi2_lin2_guo1_le4_meng2.js");
+      require("echarts/map/js/echarts-china-cities-js/nei4_meng2_gu3_xing1_an1_meng2.js");
 
       var geoCoordMap = {
         上海: [121.4648, 31.2891],
@@ -276,7 +347,8 @@ export default {
         return res;
       };
 
-      var color = ["#a6c84c", "#ffa022", "#46bee9"];
+
+      var color = ["#E40110", "#FF6200", "#009920"];
       var series = [];
       [["北京", BJData], ["上海", SHData], ["广州", GZData]].forEach(function(
         item,
@@ -313,13 +385,13 @@ export default {
               show: true,
               period: 6,
               trailLength: 0,
-              symbol: planePath,
-              symbolSize: 15
+              symbol: "arrow",
+              symbolSize: 8
             },
             lineStyle: {
               normal: {
                 color: color[i],
-                width: 1,
+                width: 0.1,
                 opacity: 0.6,
                 curveness: 0.2
               }
@@ -367,6 +439,11 @@ export default {
           top: "bottom",
           left: "right",
           data: ["北京 Top10", "上海 Top10", "广州 Top10"],
+          selected: {
+            "北京 Top10": false,
+            "上海 Top10": false,
+            "广州 Top10": false
+          },
           textStyle: {
             color: "#fff"
           },
@@ -376,7 +453,8 @@ export default {
           map: "china",
           label: {
             emphasis: {
-              show: false
+              show: true,
+              color: "#fff"
             }
           },
           roam: false,
@@ -384,11 +462,11 @@ export default {
           layoutSize: "128%",
           itemStyle: {
             normal: {
-              areaColor: "rgb(138,207,244)",
-              borderColor: "#404a59"
+              color: "rgba(51, 69, 89, .5)",
+              borderColor: "rgba(100,149,237,1)"
             },
             emphasis: {
-              areaColor: "#2a333d"
+              color: "rgba(37, 43, 61, .5)"
             }
           }
         },
@@ -397,6 +475,56 @@ export default {
       // 绘制图表
       window.onresize = myChart.resize;
       myChart.setOption(option);
+      myChart.on("click", function(param) {
+        console.log(param.name);
+        var selectedProvince = param.name;
+        if (selectedProvince.endsWith("市")) {
+          selectedProvince = selectedProvince.substr(
+            0,
+            selectedProvince.length - 1
+          );
+          myChart.off("click");
+        }
+        option.geo.map = selectedProvince;
+        option.geo.layoutSize = "100%";
+        option.series = [{ selectedMode: false }];
+        option.legend.show = false;
+        option.legend.selected = {
+          "北京 Top10": false,
+          "上海 Top10": false,
+          "广州 Top10": false
+        };
+        myChart.setOption(option);
+      });
+      document.querySelector("#chinaMap").ondblclick = function() {
+        option.geo.map = "china";
+        option.geo.layoutSize = "128%";
+        option.series = series;
+        option.legend.show = true;
+
+        myChart.setOption(option);
+        myChart.on("click", function(param) {
+          console.log(param.name);
+          var selectedProvince = param.name;
+          if (selectedProvince.endsWith("市")) {
+            selectedProvince = selectedProvince.substr(
+              0,
+              selectedProvince.length - 1
+            );
+            myChart.off("click");
+          }
+          option.geo.map = selectedProvince;
+          option.geo.layoutSize = "100%";
+          option.series = [{ selectedMode: false }];
+          option.legend.show = false;
+          option.legend.selected = {
+            "北京 Top10": false,
+            "上海 Top10": false,
+            "广州 Top10": false
+          };
+          myChart.setOption(option);
+        });
+      };
     }
   }
 };
@@ -433,22 +561,87 @@ export default {
       margin: 0;
     }
 
-    .el-carousel__item:nth-child(2n) {
-      background-color: #99a9bf;
-    }
+    
 
-    .el-carousel__item:nth-child(2n + 1) {
-      background-color: #d3dce6;
-    }
-
-    // 列表的各行换色
-    .el-table .warning-row {
-      background: oldlace;
-    }
-    .el-table .success-row {
-      background: #f0f9eb;
-    }
-    // 列表的各行换色
   }
+    // 滚动列表start
+  .ts-head{
+     width: 100%;
+     height: 1rem;
+    span{
+      width: 10.9%;
+      color:#B1C8FD;
+      display:inline-block;
+      text-align: center;
+    }
+    span:nth-child(1){
+      width: 17%;
+      text-align:left;
+      padding-left:3%;
+    }
+    span:nth-child(4){
+      width: 9%;
+    }
+    span:nth-child(5){
+      width: 12%;
+    }
+    span:nth-child(6){
+      width: 11%;
+    }
+    span:nth-child(7){
+      width: 10%;
+    }
+    span:nth-child(8){
+      width: 12%;
+    }
+  }
+  .scroll-wrap {
+    width: 100%;
+    height: 9rem;
+    overflow: hidden;
+  }
+
+  .scroll-content {
+    position: relative;
+    transition: top 1s;
+
+    li {
+      line-height: 1.125rem;
+      .ts-level {
+        display: inline-block;
+        width: 10%;
+        text-align: center;
+        span{
+          display: inline;
+        }
+      }
+      span{
+        text-align: center;
+        width: 10.9%;
+        display:inline-block;
+        color:#B1C8FD;
+      }
+      span:nth-child(1){
+        width: 20%;
+      }
+      span:nth-child(3){
+        width: 5%;
+      }
+      .bgh{
+        background-color: #E40110;
+        border-radius:4px;
+      }
+      .bgm{
+        background-color: #FF6200;
+        border-radius:4px;
+      }
+      .bgl{
+        background-color: #009920;
+        border-radius:4px;
+      }
+      
+    }
+  }
+   // 滚动列表end
 }
 </style>

@@ -4,7 +4,7 @@
       <div class="nav-left fl">
         <div class="logo">
           <img src="../img/logo.png" alt="#">
-          <span>内蒙古自治区网络安全态势感知系统</span>
+          <span>网络安全态势感知系统</span>
         </div>
       </div>
       <div class="nav-middle fl">
@@ -21,7 +21,7 @@
           <el-dropdown menu-align='start' @command="handleCommand">
             <img src="../img/default.jpg" class="avator">
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item command="home">首页</el-dropdown-item>
+              <el-dropdown-item command="home">管理中心</el-dropdown-item>
               <el-dropdown-item command="logout">退出</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>

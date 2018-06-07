@@ -32,8 +32,8 @@ export default {
   data() {
     return {
       loginForm: {
-        username: "",
-        password: ""
+        username: "admin",
+        password: "admin"
       },
       rules: {
         username: [
@@ -48,7 +48,7 @@ export default {
     submitForm: function() {
       if (
         this.loginForm.username == "admin" &&
-        this.loginForm.password == "123"
+        this.loginForm.password == "admin"
       ) {
         this.successLogin();
         this.$router.push("bigScreen/hazard");

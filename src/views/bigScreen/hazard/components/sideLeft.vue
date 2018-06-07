@@ -1,27 +1,33 @@
 <template>
-  <div class="container"  >
+  <div class="container">
     <div class="cell">
       <h2>
         <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
+        <span>风险趋势</span>
       </h2>
       <div id="main1"></div>
     </div>
     <div class="cell">
       <h2>
         <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
+        <span>风险行业分布</span>
       </h2>
       <div id="main2"></div>
     </div>
     <div class="cell">
       <h2>
         <span class="el-icon-arrow-right"></span>
-        <span >风险趋势</span>
+        <span>风险区域分布</span>
       </h2>
       <div id="main3"></div>
     </div>
-    <div class="cell"></div>
+    <div class="cell">
+      <h2>
+        <span class="el-icon-arrow-right"></span>
+        <span>风险类型分布</span>
+      </h2>
+      <div id="main4"></div>
+    </div>
   </div>
 </template>
 
@@ -38,6 +44,7 @@ export default {
     this.drawLine1();
     this.drawLine2();
     this.drawLine3();
+    this.drawLine4();
   },
   methods: {
     drawLine1() {
@@ -258,7 +265,32 @@ export default {
     drawLine4() {
       // 基于准备好的dom，初始化echarts实例
       let myChart = this.$echarts.init(document.getElementById("main4"));
-      var option = {};
+      var option = {
+        tooltip: {},
+
+        calculable: true,
+        series: [
+          {
+            name: "风险类型分布",
+            type: "pie",
+            radius: [30, 50],
+            center: ["50%", 80],
+            roseType: "area",
+            x: "50%", // for funnel
+            max: 40, // for funnel
+            sort: "ascending", // for funnel
+            data: [
+              { value: 10, name: "IP攻击" },
+              { value: 5, name: "XSS攻击" },
+              { value: 15, name: "木马植入" },
+              { value: 25, name: "蠕虫侵入" },
+              { value: 20, name: "漏洞攻击" },
+              { value: 35, name: "恶意入侵" },
+              { value: 30, name: "DNS攻击" }
+            ]
+          }
+        ]
+      };
       // 绘制图表
       window.onresize = myChart.resize;
       myChart.setOption(option);
