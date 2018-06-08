@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style  rel="stylesheet/scss" lang="scss" >
+// @font-face{font-family: myFirstFont;src: url('./style/fonts/DS-DIGI.TTF')} 
 html,body{
     height: 100%;
     width: 100%;

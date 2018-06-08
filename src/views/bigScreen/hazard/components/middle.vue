@@ -27,7 +27,7 @@
       </div>
       <div class="scroll-wrap">
         <ul class="scroll-content" :style="{ top }" ref="con1">
-          <li v-for="item in items" >
+          <li v-for="(item,index) in items" :key="index"  >
             <span>{{item.time}}</span>
             <span>{{item.name}}</span>
             <div class="ts-level"><span :class="{bgh:item.level=='高危',bgm:item.level=='中危',bgl:item.level=='低危',}">{{item.level}}</span></div>
@@ -432,7 +432,6 @@ export default {
       });
       var option = {
         tooltip: {
-          trigger: "item"
         },
         legend: {
           orient: "vertical",

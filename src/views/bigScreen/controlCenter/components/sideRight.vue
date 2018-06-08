@@ -1,27 +1,324 @@
 <template>
-    <div class="container" >
-        <div class="cell">
-            <h2>
-                <span class="el-icon-arrow-right"></span>
-                <span >重要单位TOP10</span>
-            </h2>
-            <div id="main5"></div>
-        </div>
-        <div class="cell">
-            <h2>
-                <span class="el-icon-arrow-right"></span>
-                <span >风险趋势</span>
-            </h2>
-            <div id="main6"></div>
-        </div>
-        <div class="cell">
-            <h2>
-                <span class="el-icon-arrow-right"></span>
-                <span >风险趋势</span>
-            </h2>
-            <div id="main7"></div>
-        </div>
+  <div class="container">
+    <h2>单位保障能力</h2>
+    <div class="ts-safeguard ">
+      <div class="loder fl">
+        <div class="zp fl"><img src="../img/zp.png" width="100%" height="100%"></div>
+        <p>
+          <span><img src="../img/zby_ico.png">值班员</span>
+        </p>
+        <ul>
+          <li>姓名：张峰</li>
+          <li>职务：领班</li>
+          <li class="el-icon-phone-outline"></li>
+          <li>1314785114</li>
+        </ul>
+      </div>
+      <div class="work fr">
+        <p>
+          <span><img src="../img/zby_ico.png">值班员</span>
+        </p>
+        <ul>
+          <li>姓名：张峰</li>
+          <li>职务：领班</li>
+          <li class="el-icon-phone-outline"></li>
+          <li>1314785114</li>
+        </ul>
+      </div>
+      <div class="work fr">
+        <p>
+          <span><img src="../img/zby_ico.png">值班员</span>
+        </p>
+        <ul>
+          <li>姓名：张峰</li>
+          <li>职务：领班</li>
+          <li class="el-icon-phone-outline"></li>
+          <li>1314785114</li>
+        </ul>
+      </div>
     </div>
+    <h2>技术支撑单位</h2>
+    <div class="ts-technology">
+      <ul>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+        <li class="item">
+          <p>
+            <span><img src="../img/zby_ico.png">值班员</span>
+          </p>
+          <ul>
+            <li>姓名：张峰</li>
+            <li>职务：领班</li>
+            <li class="el-icon-phone-outline"></li>
+            <li>1314785114</li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="date_box">
+      <thead>
+        <tr>
+          <th width="16.6%">
+            <span>星期一</span><br>12/05/2017</th>
+          <th width="16.6%">
+            <span>星期二</span><br>12/05/2017</th>
+          <th width="16.6%">
+            <span>星期三</span><br>12/05/2017</th>
+          <th width="16.6%">
+            <span>星期四</span><br>12/05/2017</th>
+          <th width="16.6%">
+            <span>星期五</span><br>12/05/2017</th>
+          <th>
+            <span>星期六</span><br>12/05/2017</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+          <td>
+            <h5>9:00-11:00</h5>
+            <ul>
+              <li>张三</li>
+              <li>
+                <span class="el-icon-phone-outline"></span>
+              </li>
+              <li>1314785114</li>
+            </ul>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
 </template>
 
 <script>
@@ -29,172 +326,111 @@ export default {
   name: "SideRight",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App",
+      msg: "Welcome to Your Vue.js App"
     };
   },
-   mounted() {
-    this.drawLine1();
-    
-  },
-  methods: {
-    drawLine1() {
-      // 基于准备好的dom，初始化echarts实例
-      let myChart = this.$echarts.init(document.getElementById("main5"));
-  var data1 = [1000, 900,800, 700, 600,500, 400, 300, 200, 100];
-var data1Max = Math.max.apply( Math, data1 );
-var data5= ['高明区', '三水区', '顺德区', '南海区', '禅城区','高明区', '三水区', '顺德区', '南海区', '禅城区']
-var data2 = [];
-var myColor=['#e63810','#ff6b00','#e3b61f','#13b5b1'];
-for(var i = 0;i<data1.length;i++){
-    data2.push(data1Max*1.2)
-}
-
-var option = {
-    
-    tooltip: {
-        show:"true",
-        trigger: 'axis',
-        axisPointer: { // 坐标轴指示器，坐标轴触发有效
-        type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
-    }
-    },
-    grid: {
-        left: '10%',
-        top: '5%',
-        bottom: '3%',
-        right: '20%',
-        containLabel: true
-    },
-    legend: {
-        show: false
-    },
-
-    xAxis: {
-        splitLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        axisLabel: {
-            show: false
-        }
-    },
-    yAxis: {
-        splitLine: {
-            show: false
-        },
-        axisTick: {
-            show: false
-        },
-        axisLine: {
-            show: false
-        },
-        axisLabel: {
-            color: '#ffffff',
-        },
-        data:data5
-        //data:[]
-    },
-    series: [{
-        type: 'bar',
-        barGap: '-100%',
-        itemStyle: {
-              normal: {
-                            show: true,
-                            color: function(params) {
-                                var num=myColor.length;
-                                return myColor[params.dataIndex%num]
-                            },
-                            barBorderRadius: 50,
-                            borderWidth: 0,
-                            borderColor: '#333',
-                        }
-        },
-        /*label: {
-            normal: {
-                show: true,
-                position: 'right',
-                fontSize: 32,
-                color: '#ffffff'
-            }
-        },*/
-        z: -10,
-        data: data1.sort(function(a, b) {
-                return a - b;
-                })
-        //data: []
-    }, {
-        type: 'bar',
-        barGap: '-100%',
-        itemStyle: {
-            normal: {
-                color: '#000D4A',
-               
-               
-                shadowColor: '#ffffff',
-                shadowBlur: 2,
-                barBorderRadius: 12
-            }
-        },
-        label: {
-            normal: {
-                show: true,
-                color: '#fff000',
-                offset: [100,0],
-                formatter: function(params){
-                    return data1[params.dataIndex]===0?'-':data1[params.dataIndex]
-                }
-            }
-        },
-        z: -12,
-        data: data2
-    }]
-};
-      // 绘制图表
-      window.onresize = myChart.resize;
-      myChart.setOption(option);
-    },
-   
-  }
+  mounted() {},
+  methods: {}
 };
 </script>
 
 
 <style scoped rel="stylesheet/scss" lang="scss">
- .container{
-   width: 100%;
-   height: 39rem;
-   
-  .cell {
-    width: 100%;
-    height: 13rem;
-    background-color: rgba(28, 56, 116, 0.25);
-    border: 1px solid #033993;
-    border-top:none;
-    border-radius: 0 21px 0 0;
-    background-image: url(../img/z_t01.png), url(../img/z_t02.png);
-    background-position: left top, right top;
-    background-repeat: no-repeat, no-repeat;
-    margin-bottom: 0.4rem;
-    h2 {
-      height: 17%;
-      width: 100%;
-      color: #00d8fe;
-      span {
-        font-weight: 900;
-        font-size: 0.64rem;
+.container {
+  width: 100%;
+  height: 39rem;
+  padding-right: 2%;
+  h2 {
+    color: #fff;
+    font-size: 0.72rem;
+  }
+  .ts-safeguard {
+    color: #fff;
+    height: 6.72rem;
+    .loder {
+      width: 38%;
+      height: 96%;
+      background: url(../img/ld_bj.png) no-repeat;
+      background-size: 100% 100%;
+      padding: 2%;
+      .zp {
+        width: 30%;
+        height: 85%;
+        margin: 2% 7%;
       }
     }
-    div {
-      height: 83%;
-      width: 100%;
+    .work {
+      width: 14%;
+      background: url(../img/zb_bj.png) no-repeat;
+      background-size: 100% 100%;
+      height: 96%;
+      padding: 2% 6%;
+      margin-right: 2%;
     }
   }
-   
- }
+  .ts-technology {
+    height: 15.32rem;
+    width: 100%;
+    color: #fff;
+    ul {
+      width: 100%;
+      .item {
+        width: 19%;
+        background: url(../img/zb_bj02.png) no-repeat;
+        background-size: 100% 100%;
+        height: 7rem;
+        padding: 2% 6%;
+        margin-right: 2%;
+        float: left;
+        margin-bottom: 0.4rem;
+      }
+    }
+  }
 
+  .date_box {
+    color:#fff;
+    border-collapse: collapse;
+    font-size: 0.65rem;
+    border: 1px solid #1f3a7a;
+  }
+  .date_box thead th {
+    padding: 0.3rem;
+    line-height: 1rem;
+    text-align: center;
+    border: 1px solid #1f3a7a;
+    background-color: #4ea9db;
+  }
+  .date_box thead span {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .date_box tbody th,
+  .date_box tbody td {
+    padding: 0.1rem 0.4rem;
+    line-height: 0.9rem;
+    border: 1px solid #1f3a7a;
+    background-color: rgba(1, 160, 226, 0.15);
+    font-size: 0.6rem;
+    height: 1.95rem;
+  }
+  .date_box tbody span {
+    border-radius: 8px;
+    width: 20%;
+    height: 0.6rem;
+    text-align: center;
+    line-height: 0.8rem;
+    display: block;
+    font-size: 0.6rem;
+  }
+  .date_box tbody h5 {
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  .date_box tbody ul li {
+    text-align: center;
+  }
+  .date_box tbody ul li:nth-child(2) {
+    color: #dc3939;
+  }
+}
 </style>
