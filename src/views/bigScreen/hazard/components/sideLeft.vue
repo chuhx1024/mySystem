@@ -1,12 +1,25 @@
 <template>
-  <div class="container">
-    <div class="cell">
+  <div class="container hazard">
+    <div class="cell" @click="dialogTableVisible = true">
       <h2>
         <span class="el-icon-arrow-right"></span>
         <span>风险趋势</span>
       </h2>
       <div id="main1"></div>
     </div>
+    <el-dialog title="查询结果" :visible.sync="dialogTableVisible">
+      <el-table :data="gridData">
+        <el-table-column property="date" label="日期" width="150"></el-table-column>
+        <el-table-column property="address" label="源地址" width="200"></el-table-column>
+        <el-table-column property="port" label="端口" width="200"></el-table-column>
+        <el-table-column property="address1" label="目的地址" width="200"></el-table-column>
+        <el-table-column property="port1" label="目的端口" width="200"></el-table-column>
+        <el-table-column property="name" label="事件名称" width="200"></el-table-column>
+        <el-table-column property="type" label="协议类型" width="200"></el-table-column>
+        <el-table-column property="address3" label="设备地址" width="200"></el-table-column>
+        <el-table-column property="level" label="事件级别" width="200"></el-table-column>
+      </el-table>
+    </el-dialog>
     <div class="cell">
       <h2>
         <span class="el-icon-arrow-right"></span>
@@ -37,7 +50,74 @@ export default {
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
-      data1: [0, 70, 250, 100, 400, 390]
+      data1: [0, 70, 250, 100, 400, 390],
+      gridData: [
+        {
+          date: "2016-05-02",
+          address: "192.167.8.8",
+          port: "80",
+          address1: "192.167.8.8",
+          port1: "88",
+          name: "DNS攻击",
+          type:"TCP",
+          address2: "192.167.8.8",
+          port2: "88",
+          address3: "192.167.8.8",
+          level: "高",
+        },
+        {
+          date: "2016-05-02",
+          address: "192.167.8.8",
+          port: "80",
+          address1: "192.167.8.8",
+          port1: "88",
+          name: "DNS攻击",
+          type:"TCP",
+          address2: "192.167.8.8",
+          port2: "88",
+          address3: "192.167.8.8",
+          level: "高",
+        },
+        {
+          date: "2016-05-02",
+          address: "192.167.8.8",
+          port: "80",
+          address1: "192.167.8.8",
+          port1: "88",
+          name: "DNS攻击",
+          type:"TCP",
+          address2: "192.167.8.8",
+          port2: "88",
+          address3: "192.167.8.8",
+          level: "高",
+        },
+        {
+          date: "2016-05-02",
+          address: "192.167.8.8",
+          port: "80",
+          address1: "192.167.8.8",
+          port1: "88",
+          name: "DNS攻击",
+          type:"TCP",
+          address2: "192.167.8.8",
+          port2: "88",
+          address3: "192.167.8.8",
+          level: "高",
+        },
+      ],
+      dialogTableVisible: false,
+      dialogFormVisible: false,
+      form: {
+        name: "",
+        region: "",
+        date1: "",
+        date2: "",
+        delivery: false,
+        type: [],
+        resource: "",
+        desc: ""
+      },
+      formLabelWidth: "120px"
     };
   },
   mounted() {
@@ -105,8 +185,8 @@ export default {
         grid: {
           left: "2%",
           right: "5%",
-          bottom: "10px",
-          top: "30px",
+          bottom: "5%",
+          top: "20%",
           containLabel: true
         },
         symbol: "arrow", //图标形状

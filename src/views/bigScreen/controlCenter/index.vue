@@ -14,13 +14,12 @@
 </template>
 
 <script>
-import { SideLeft,SideRight,Middle} from './components'
+import { SideLeft,SideRight} from './components'
 export default {
   name: "ControlCenter",
   components: {
     SideLeft,
     SideRight,
-    Middle
   },
   data() {
     return {

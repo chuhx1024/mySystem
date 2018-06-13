@@ -51,37 +51,37 @@ export default {
     return {
      checkList: ['高危','中危','低危'],
       prizeList: [
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马入侵", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "蠕虫侵入", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "XSS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马植入", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "木马植入", level: "高危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
-        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "中危" ,unit:"呼和浩特市",website:"公司主门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马入侵", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "蠕虫侵入", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "XSS攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "低危",unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "漏洞攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "木马植入", level: "高危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "恶意入侵", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "DNS攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
+        { time: "2018-03-27 10:06:06", name: "IP攻击", level: "中危" ,unit:"呼和浩特市",website:"公司门户网站",possession:"上海市",IP:"192.127.80.80" ,person:"张三"},
       ],
       
 
@@ -406,7 +406,6 @@ export default {
       var color = ["#fff", "#ffa022", "#46bee9"];
       var series = [];
       [["上海", BJData]].forEach(function(item, i) {
-        console.log(item);
         series.push(
           {
             name: item[0],
@@ -464,7 +463,6 @@ export default {
             },
             symbol: "circle",
             symbolSize: function(val) {
-              console.log(val);
               return 4 + val[2] / 1000; //圆环大小
             },
             itemStyle: {

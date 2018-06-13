@@ -1,7 +1,64 @@
 <template>
   <div class="container">
     <div class="top">
-
+      <div class="tanzhen">
+        <div class="ltAnimate" style=" transform:scale(0.7);position:absolute;top:0;left:0">
+          <div class="img">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="yuan">
+            <img src="../img/center.png" alt="">
+          </div>
+          <div class='satelLite sate1'>
+            <div class="shuju1">
+              <h3>
+                 <countTo :startVal='startVal' :endVal='endVal' :duration='3000'></countTo>
+              </h3>
+              <p>探针设备数</p>
+            </div>
+          </div>
+          <div class='satelLite sate2'>
+            <div class="shuju2">
+              <h3>
+                <countTo :startVal='startVal' :endVal='endVal' :duration='3000'></countTo>
+              </h3>
+              <p>重要单位</p>
+            </div>
+          </div>
+          <div class='satelLite sate3'>
+            <div class="shuju3">
+              <h3>
+                <countTo :startVal='startVal' :endVal='endVal' :duration='3000'></countTo>
+              </h3>
+              <p>重要网站数</p>
+            </div>
+          </div>
+          <div class='satelLite sate4'>
+            <div class="shuju4">
+              <h3>
+                <countTo :startVal='startVal' :endVal='endVal' :duration='3000'></countTo>
+              </h3>
+              <p>基础设施</p>
+            </div>
+          </div>
+          <div class='satelLite sate5'>
+            <div class="shuju5">
+              <h3>
+                <countTo :startVal='startVal' :endVal='endVal' :duration='3000'></countTo>
+                </h3>
+              <p>风险网站数</p>
+            </div>
+          </div>
+        </div>
+        <div id='map' style='width:100%;height:34.45rem;'>
+        </div>
+      </div>
     </div>
     <div class="bottom">
       <div class="cell">
@@ -24,18 +81,22 @@
 </template>
 
 <script>
+import countTo from "vue-count-to";
 export default {
   name: "SideLeft",
+  components: { countTo },
   data() {
     return {
       msg: "Welcome to Your Vue.js App",
-      data1: [0, 70, 250, 100, 400, 390]
+      data1: [0, 70, 250, 100, 400, 390],
+      startVal:1000,
+      endVal:1024,
+
     };
   },
   mounted() {
     this.drawLine1();
     this.drawLine2();
-    this.drawLine3();
   },
   methods: {
     drawLine1() {
@@ -270,9 +331,155 @@ export default {
 .container {
   width: 100%;
   height: 39rem;
-  .top{
+  .top {
     width: 100px;
     height: 29rem;
+    .tanzhen{
+      position: absolute;
+      height: 14.4rem;
+      width: 30.2rem;
+      color:#fff;
+    }
+    .ltAnimate {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .ltAnimate .img {
+      overflow: hidden;
+      position: absolute;
+      left: 8rem;
+      top: 4.48rem;
+
+      width: 12rem;
+      height: 7rem;
+    }
+
+    .ltAnimate ul {
+      list-style: none;
+
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      transition: all 10s;
+      animation: myfirst 8s infinite linear;
+      z-index: 100;
+    }
+
+    .ltAnimate li {
+      background: url(../img/rain1.png);
+      width: 12rem;
+      height: 12rem;
+    }
+
+    .ltAnimate .yuan {
+      position: absolute;
+      top: 3.4rem;
+      left: 8rem;
+      
+
+    }
+    .ltAnimate .yuan img {
+      // transform: perspective(380px) rotate3d(1, 0, 0, 70deg);
+      width: 14rem;
+      height: 14rem;
+      animation: rotate 6s linear infinite;
+    }
+
+    @keyframes myfirst {
+      0% {
+      }
+      100% {
+        transform: translateY(-1200px);
+      }
+    }
+    @keyframes rotate {
+			from {
+				transform:rotateX(-70deg) rotateZ(0);
+			}
+			to {
+				transform:rotateX(-70deg)  rotateZ(360deg);
+			}
+		}
+
+    .ltAnimate .satelLite {
+      position: absolute;
+      text-align: center;
+    }
+    .ltAnimate .satelLite.sate1 {
+      left: 12.24rem;
+      top: 3.52rem;
+      background: url(../img/sate1.png);
+      background-size: 100% 100%;
+      width: 5.88rem;
+      height: 6.44rem;
+    }
+    .ltAnimate .satelLite.sate2 {
+      left: 0.8rem;
+      top: 8rem;
+      background: url(../img/sate2.png);
+      background-size: 100% 100%;
+      width: 9.84rem;
+      height: 2.96rem;
+    }
+    .ltAnimate .satelLite.sate3 {
+      left: 7.44rem;
+      top: 12rem;
+      background: url(../img/sate3.png);
+      background-size: 100% 100%;
+      width: 5.52rem;
+      height: 5.36rem;
+    }
+    .ltAnimate .satelLite.sate4 {
+      left: 17.6rem;
+      top: 12rem;
+      background: url(../img/sate4.png);
+      background-size: 100% 100%;
+      width: 5.56rem;
+      height: 5.36rem;
+    }
+    .ltAnimate .satelLite.sate5 {
+      left: 20rem;
+      top: 8rem;
+      background: url(../img/sate5.png);
+      background-size: 100% 100%;
+      width: 9.84rem;
+      height: 2.92rem;
+    }
+    .ltAnimate .satelLite h3 {
+      line-height: 1.36rem;
+      font-family: myFirstFont;
+      font-size: 1.36rem;
+    }
+    .ltAnimate .satelLite p {
+      font-size: 0.56rem;
+      color: #03d6ff;
+    }
+    .shuju1 {
+      position: absolute;
+      left: 1rem;
+      top: 0.24rem;
+    }
+    .shuju2 {
+      position: absolute;
+      left: 1.5rem;
+      top: 0.24rem;
+    }
+    .shuju3 {
+      position: absolute;
+      left: 1rem;
+      top: 2.4rem;
+    }
+    .shuju4 {
+      position: absolute;
+      left: 1.4rem;
+      top: 2.4rem;
+    }
+    .shuju5 {
+      position: absolute;
+      left: 5rem;
+      top: 0.4rem;
+    }
   }
   .bottom {
     .cell {
@@ -302,5 +509,6 @@ export default {
       }
     }
   }
+
 }
 </style>

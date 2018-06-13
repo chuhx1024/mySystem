@@ -109,214 +109,216 @@
       </ul>
 
     </div>
+    <div class="ts-tab-bot">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="date_box">
+        <thead>
+          <tr>
+            <th width="16.6%">
+              <span>星期一</span><br>12/05/2017</th>
+            <th width="16.6%">
+              <span>星期二</span><br>12/05/2017</th>
+            <th width="16.6%">
+              <span>星期三</span><br>12/05/2017</th>
+            <th width="16.6%">
+              <span>星期四</span><br>12/05/2017</th>
+            <th width="16.6%">
+              <span>星期五</span><br>12/05/2017</th>
+            <th>
+              <span>星期六</span><br>12/05/2017</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+            <td>
+              <h5>9:00-11:00</h5>
+              <ul>
+                <li>张三</li>
+                <li>
+                  <span class="el-icon-phone-outline"></span>
+                </li>
+                <li>1314785114</li>
+              </ul>
+            </td>
+          </tr>
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="date_box">
-      <thead>
-        <tr>
-          <th width="16.6%">
-            <span>星期一</span><br>12/05/2017</th>
-          <th width="16.6%">
-            <span>星期二</span><br>12/05/2017</th>
-          <th width="16.6%">
-            <span>星期三</span><br>12/05/2017</th>
-          <th width="16.6%">
-            <span>星期四</span><br>12/05/2017</th>
-          <th width="16.6%">
-            <span>星期五</span><br>12/05/2017</th>
-          <th>
-            <span>星期六</span><br>12/05/2017</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-          <td>
-            <h5>9:00-11:00</h5>
-            <ul>
-              <li>张三</li>
-              <li>
-                <span class="el-icon-phone-outline"></span>
-              </li>
-              <li>1314785114</li>
-            </ul>
-          </td>
-        </tr>
+        </tbody>
+      </table>
+    </div>
 
-      </tbody>
-    </table>
   </div>
 
 </template>
@@ -369,6 +371,7 @@ export default {
     }
   }
   .ts-technology {
+    overflow: hidden;
     height: 15.32rem;
     width: 100%;
     color: #fff;
@@ -386,51 +389,62 @@ export default {
       }
     }
   }
+  .ts-tab-bot {
+    .date_box {
+      color: #fff;
+      border-collapse: collapse;
+      // font-size: 0.65rem;
+      border: 1px solid #1f3a7a;
+      thead th {
+        height: 2.5rem;
+        text-align: center;
+        border: 1px solid #1f3a7a;
+        background-color: #4ea9db;
+      }
+      tbody{
+        tr{
+          h5{
+            height:1rem;
+          }
+          li{
+            height: 0.93rem;
+          }
+        }
+      }
+    }
 
-  .date_box {
-    color:#fff;
-    border-collapse: collapse;
-    font-size: 0.65rem;
-    border: 1px solid #1f3a7a;
-  }
-  .date_box thead th {
-    padding: 0.3rem;
-    line-height: 1rem;
-    text-align: center;
-    border: 1px solid #1f3a7a;
-    background-color: #4ea9db;
-  }
-  .date_box thead span {
-    font-size: 0.9rem;
-    font-weight: bold;
-  }
-  .date_box tbody th,
-  .date_box tbody td {
-    padding: 0.1rem 0.4rem;
-    line-height: 0.9rem;
-    border: 1px solid #1f3a7a;
-    background-color: rgba(1, 160, 226, 0.15);
-    font-size: 0.6rem;
-    height: 1.95rem;
-  }
-  .date_box tbody span {
-    border-radius: 8px;
-    width: 20%;
-    height: 0.6rem;
-    text-align: center;
-    line-height: 0.8rem;
-    display: block;
-    font-size: 0.6rem;
-  }
-  .date_box tbody h5 {
-    padding-top: 0.3rem;
-    text-align: center;
-  }
-  .date_box tbody ul li {
-    text-align: center;
-  }
-  .date_box tbody ul li:nth-child(2) {
-    color: #dc3939;
+    // .date_box thead span {
+    //   font-size: 0.9rem;
+    //   font-weight: bold;
+    // }
+    // .date_box tbody th,
+    // .date_box tbody td {
+    //   padding: 0.1rem 0.4rem;
+    //   line-height: 0.9rem;
+    //   border: 1px solid #1f3a7a;
+    //   background-color: rgba(1, 160, 226, 0.15);
+    //   font-size: 0.6rem;
+    //   height: 1.95rem;
+    // }
+    // .date_box tbody span {
+    //   border-radius: 8px;
+    //   width: 20%;
+    //   height: 0.6rem;
+    //   text-align: center;
+    //   line-height: 0.8rem;
+    //   display: block;
+    //   font-size: 0.6rem;
+    // }
+    // .date_box tbody h5 {
+    //   padding-top: 0.3rem;
+    //   text-align: center;
+    // }
+    // .date_box tbody ul li {
+    //   text-align: center;
+    // }
+    // .date_box tbody ul li:nth-child(2) {
+    //   color: #dc3939;
+    // }
   }
 }
 </style>

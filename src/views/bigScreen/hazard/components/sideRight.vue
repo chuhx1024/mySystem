@@ -30,7 +30,7 @@
           </thead>
           <tbody>
             <tr>
-              <tr v-for="item in tabData">
+              <tr v-for="(item,index) in tabData" :key=index>
                 <td>{{item.origin}}</td>
                 <td>{{item.title}}</td>
                 <td style="color:#b1c8ff">03-15 12:30</td>
@@ -350,7 +350,7 @@ var option = {
       }
 
       tbody td {
-        padding: 0 1.5rem;
+        padding: 0 7%;
         height: 1.2rem;
         line-height: 1.2rem;
         white-space: nowrap;

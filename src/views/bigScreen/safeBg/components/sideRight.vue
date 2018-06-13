@@ -31,7 +31,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -52,7 +52,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -73,7 +73,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -94,7 +94,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -124,7 +124,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -145,7 +145,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -166,7 +166,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 
@@ -187,7 +187,7 @@
               </div>
             </div>
             <div class="content-pub-bottom-right fr">
-              <el-rate v-model="value5" disabled show-score text-color="#ff9900" score-template="{value}">
+              <el-rate v-model="value5" disabled  text-color="#ff9900" score-template="{value}">
               </el-rate>
               <span>解决问题能力</span>
 

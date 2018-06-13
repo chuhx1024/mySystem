@@ -183,6 +183,7 @@ export default {
   mounted() {
     this.drawLine1();
     this.drawLine2();
+      
      
     let con1 = this.$refs.con1;
 
@@ -210,8 +211,8 @@ export default {
   methods: {
     drawLine1() {
       // 基于准备好的dom，初始化echarts实例
-      let myChart = this.$echarts.init(document.getElementById("main1"));
-      var data1 = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+      let myChart1 = this.$echarts.init(document.getElementById("main1"));
+     var data1 = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
       var data1Max = Math.max.apply(Math, data1);
       var data5 = [
         "教育部",
@@ -255,7 +256,7 @@ export default {
           left: "10%",
           top: "5%",
           bottom: "3%",
-          right: "15%",
+          right: "20%",
           containLabel: true
         },
         legend: {
@@ -313,14 +314,14 @@ export default {
                 borderColor: "#333"
               }
             },
-            // label: {
-            //   normal: {
-            //     show: true,
-            //     position: "right",
-            //     fontSize: 32,
-            //     color: "#ffffff"
-            //   }
-            // },
+            /*label: {
+            normal: {
+                show: true,
+                position: 'right',
+                fontSize: 32,
+                color: '#ffffff'
+            }
+        },*/
             z: -10,
             data: data1.sort(function(a, b) {
               return a - b;
@@ -358,8 +359,9 @@ export default {
         ]
       };
       // 绘制图表
-      window.onresize = myChart.resize;
-      myChart.setOption(option);
+      window.onresize = myChart1.resize;
+
+      myChart1.setOption(option);
     },
     drawLine2() {
       // 基于准备好的dom，初始化echarts实例
@@ -512,6 +514,7 @@ export default {
       };
       // 绘制图表
       window.onresize = myChart.resize;
+
       myChart.setOption(option);
     }
   }
@@ -546,6 +549,7 @@ export default {
     .tu_t p {
       position: absolute;
       top: 0.1rem;
+      left:2%;
       line-height: 1.5rem;
       font-size: 0.56rem;
       text-align: center;

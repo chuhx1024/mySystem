@@ -317,7 +317,7 @@ export default {
             name: "访问来源",
             type: "pie",
             radius: "33%",
-            center: ["58%", "20%"],
+            center: ["50%", "20%"],
             color: ["#DEB140", "#49DFF0", "#6F81DA"],
             data: [
               { value: 2700, name: "党政机关" },
@@ -396,7 +396,7 @@ export default {
         padding-top: 10%;
       }
       p {
-        width: 55%;
+        width: 56%;
         color: #e5e5e9;
       }
     }
