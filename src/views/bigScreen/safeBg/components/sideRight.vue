@@ -20,7 +20,7 @@
         <div class="content-pub content-lt fl">
           <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -41,7 +41,7 @@
         <div class="content-pub content-rt fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -62,7 +62,7 @@
         <div class="content-pub content-lb fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -83,7 +83,7 @@
         <div class="content-pub content-rb fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -113,7 +113,7 @@
         <div class="content-pub content-lt fl">
           <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -134,7 +134,7 @@
         <div class="content-pub content-rt fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -155,7 +155,7 @@
         <div class="content-pub content-lb fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
@@ -176,7 +176,7 @@
         <div class="content-pub content-rb fl">
            <div class="content-pub-top">
             <img src="../img/ditu_ico.png" alt="">
-            <span>北京天融信软件有限公司</span>
+            <span>北京XXX软件有限公司</span>
           </div>
           <div class="content-pub-bottom fl">
             <div class="content-pub-bottom-left fl">
